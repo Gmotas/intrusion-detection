@@ -163,11 +163,12 @@ A suíte cobre os leitores de feed e cada regra de detecção com dados sintéti
 
 ## Capturas de tela
 
-Veja a pasta `screenshots/`:
+Os mockups de terminal abaixo mostram o **Intrusion Detection Demo em ação** — detecção de padrões incomuns de tráfego com classificação de gravidade. (Arquivos em `screenshots/`.)
 
-| Relatório de console | Saída JSON |
+| **Relatório de console** | **Saída JSON** |
 | --- | --- |
-| ![report](screenshots/ids_console.svg) | ![json](screenshots/ids_json.svg) |
+| ![Relatório de detecção mostrando port-scan, connection-flood e large-transfer com gravidade](screenshots/ids_console.svg) | ![Saída JSON estruturada com by_severity, by_type e a lista de alertas](screenshots/ids_json.svg) |
+| *Detecção de anomalias de tráfego (varredura de portas, inundação, grande transferência).* | *Saída legível por máquina para integrar com outras ferramentas.* |
 
 ## Aviso / Uso ético
 
@@ -338,11 +339,12 @@ The suite covers the feed readers and each detection rule with synthetic data �
 
 ## Screenshots
 
-See the `screenshots/` folder:
+The terminal mockups below show the **Intrusion Detection Demo in action** — detection of unusual traffic patterns with severity classification. (Files in `screenshots/`.)
 
-| Console report | JSON output |
+| **Console report** | **JSON output** |
 | --- | --- |
-| ![report](screenshots/ids_console.svg) | ![json](screenshots/ids_json.svg) |
+| ![Detection report showing port-scan, connection-flood and large-transfer with severity](screenshots/ids_console.svg) | ![Structured JSON output with by_severity, by_type and the alerts list](screenshots/ids_json.svg) |
+| *Traffic-anomaly detection (port scan, connection flood, large transfer).* | *Machine-readable output for integration with other tooling.* |
 
 ## Disclaimer / Ethical Use
 
