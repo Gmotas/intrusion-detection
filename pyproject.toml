@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intrusion-detection-demo"
+version = "1.0.0"
+description = "Basic intrusion-detection demo that flags unusual network traffic patterns (port scans, floods, beacons)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Gabriel Mota Silva" }]
+keywords = ["security", "ids", "intrusion-detection", "anomaly-detection", "network", "cli", "educational"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Security",
+]
+
+[project.urls]
+Homepage = "https://github.com/Gmotas/security-tooling"
+Repository = "https://github.com/Gmotas/security-tooling"
+
+[project.scripts]
+ids-demo = "ids_demo:main"
+
+[tool.setuptools]
+py-modules = ["ids_demo"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ids*"]
